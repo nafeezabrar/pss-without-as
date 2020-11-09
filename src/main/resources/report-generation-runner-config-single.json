@@ -1,0 +1,45 @@
+{
+  "Seed": 123,
+  "Pss Type": {
+    "Dimension Type": "SINGLE",
+    "Dimension": {
+      "Id": 1,
+      "Name": "location",
+      "N": 4
+    }
+  },
+  "Psv Generation Config": {
+    "Method": "Alphabet",
+    "Print": "yes",
+    "Print To": "HTML",
+    "Printed File Name": "psv_generation_multi_output.html"
+  },
+  "Pss Grouping Config": {
+    "Method": "One Dimension",
+    "Ooi In Each Group": {
+      "Dimension": "location",
+      "Number": 2
+    },
+    "Print Ooi Values Per Group": "yes",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "psv_grouping_output_single.html"
+  },
+  "User Generation Config": {
+    "Number Of Users": 100,
+    "Method": "Random",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "user_generation_single_output.html"
+  },
+  "User Grouping Config": {
+    "Method": "Equal Distribution"
+  },
+  "Observed Report Generation Config": {
+    "Method": "Random",
+    "Number Of Reports": 100,
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "report_generation_single_output.html"
+  }
+}

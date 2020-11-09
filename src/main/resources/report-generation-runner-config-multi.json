@@ -1,0 +1,56 @@
+{
+  "Pss Type": {
+    "Dimension Type": "MULTI",
+    "Dimension": [
+      {
+        "Id": 1,
+        "Name": "location",
+        "N": 6
+      },
+      {
+        "Id": 2,
+        "Name": "product",
+        "N": 6
+      }
+    ]
+  },
+  "Psv Generation Config": {
+    "Method": "Alphabet",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "psv_generation_multi.html"
+  },
+  "Pss Grouping Config": {
+    "Method": "All Dimension",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "pss_grouping_multi.html",
+    "Ooi In Each Group": [
+      {
+        "Dimension": "location",
+        "Number": 3
+      },
+      {
+        "Dimension": "product",
+        "Number": 3
+      }
+    ]
+  },
+  "User Generation Config": {
+    "Number Of Users": 100,
+    "Method": "Random"
+  },
+  "User Grouping Config": {
+    "Method": "Equal Distribution",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "user_grouping_multi.html"
+  },
+  "Observed Report Generation Config": {
+    "Method": "Random",
+    "Number Of Reports": 100,
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "report_generation_multi_output.html"
+  }
+}

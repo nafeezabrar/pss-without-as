@@ -1,0 +1,9 @@
+{
+  "File Name": "target_decodability",
+  "Type": "Mean",
+  "Seed Generation": {
+    "Type": "Random",
+    "Total Seeds": 1,
+    "Seed": 0
+  }
+}

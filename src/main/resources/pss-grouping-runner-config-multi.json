@@ -1,0 +1,37 @@
+{
+  "Pss Type": {
+    "Dimension Type": "MULTI",
+    "Dimension": [
+      {
+        "Id": 1,
+        "Name": "location",
+        "N": 4
+      },
+      {
+        "Id": 2,
+        "Name": "product",
+        "N": 4
+      }
+    ]
+  },
+  "Psv Generation Config": {
+    "Method": "Alphabet",
+    "Print": "yes",
+    "Print To": "HTML",
+    "Printed File Name": "psv_generation_multi_output.html"
+  },
+  "Pss Grouping Config": {
+    "Method": "One Dimension",
+    "Dividing Dimension": "location",
+    "Ooi In Each Group": [
+      {
+        "Dimension": "location",
+        "Number": 2
+      }
+    ],
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "psv_grouping_output_multi.html",
+    "Print Ooi Values Per Group": "Yes"
+  }
+}

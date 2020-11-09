@@ -1,0 +1,124 @@
+{
+  "Pss Type": {
+    "Dimension Type": "MULTI",
+    "Dimension": [
+      {
+        "Id": 1,
+        "Name": "location",
+        "N": 12
+      },
+      {
+        "Id": 2,
+        "Name": "product",
+        "N": 12
+      }
+    ]
+  },
+  "Psv Generation Config": {
+    "Dimension": [
+      {
+        "Method": "Point",
+        "Name": "location"
+      },
+      {
+        "Method": "Alphabet Capital",
+        "Name": "product"
+      }
+    ],
+    "Value Generation": "Sequential"
+  },
+  "Pss Grouping Config": {
+    "Method": "All Dimension Sequential",
+    "Ooi In Each Group": [
+      {
+        "Dimension": "location",
+        "Number": 4
+      },
+      {
+        "Dimension": "product",
+        "Number": 4
+      }
+    ]
+  },
+  "User Generation Config": {
+    "Number Of Users": 45,
+    "Method": "Random"
+  },
+  "User Grouping Config": {
+    "Method": "Equal Distribution Sequential"
+  },
+  "Observed Report Generation Config": {
+    "Method": "Random",
+    "Number Of Reports": 1000,
+    "Source Type": "Json",
+    "File Name": "observed_reports_input.json"
+  },
+  "Anonymity Generation Config": {
+    "Method": "Fixed",
+    "Anonymity": [
+      {
+        "Dimension": "location",
+        "Anonymity": 3
+      },
+      {
+        "Dimension": "product",
+        "Anonymity": 3
+      }
+    ]
+  },
+  "Anonymization Config": {
+    "Method": "IDGAS",
+    "File Name": "anonymization_input.json",
+    "Source Type": "Json"
+  },
+  "Final Report Generation Config": {
+    "Method": "Simple"
+  },
+  "Deanonymization Config": {
+    "Method": "IDGAS"
+  },
+  "Cycle Runner Config": {
+  },
+  "Adversary Config": {
+    "Adversary Type": "Aps Adversary",
+    "Report Filter By": "Limited Time",
+    "Target User Id": 1,
+    "Number Of Reports": 60,
+    "From Report Id": 200,
+    "To": 400,
+    "Strength": "Multiple User",
+    "Generation Type": "Simple Set 2",
+    "Method": "IDGAS",
+    "Decodability Calculation Config": {
+      "Intermediate Points": {
+        "Type": [
+          "Location Adding Pre-decoding"
+        ],
+        "Print": "Yes",
+        "Print To": "Text File",
+        "Print Source": "Separate",
+        "Append": "Yes"
+      },
+      "End Point": {
+        "Type": [
+          "Location"
+        ],
+        "Print": "Yes",
+        "Print To": "Text File",
+        "Print Source": "Separate",
+        "Append": "Yes"
+      }
+    }
+  },
+  "Post Result Config": {
+    "Observed Report Count Map": "Yes",
+    "Observed Report Value Count Map": "Yes",
+    "Aps Decodability Result": "Yes",
+    "Adversary Own Report Count Map": "Yes",
+    "Adversary Intercepted Report Count": "Yes",
+    "Adversary Reported Value Count": "Yes",
+    "Adversary Decoded Value Count": "Yes",
+    "Report Count to Decode": "Yes",
+    "Report Count Of Each Group": "Yes"
+  }
+}

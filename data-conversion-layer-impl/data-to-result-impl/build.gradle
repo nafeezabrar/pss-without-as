@@ -1,0 +1,18 @@
+group 'pss.simulator'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.12.1'
+    compile project(':data-conversion-layer:data-to-result')
+    compile project(':domain-layer:data:result-presentable')
+    compile project(':domain-layer:data:pss-variable')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '1.10.19'
+}

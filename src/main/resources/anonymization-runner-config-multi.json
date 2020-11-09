@@ -1,0 +1,78 @@
+{
+  "Pss Type": {
+    "Dimension Type": "MULTI",
+    "Dimension": [
+      {
+        "Id": 1,
+        "Name": "location",
+        "N": 6
+      },
+      {
+        "Id": 2,
+        "Name": "product",
+        "N": 6
+      }
+    ]
+  },
+  "Psv Generation Config": {
+    "Method": "Alphabet",
+    "Print": "yes",
+    "Print To": "HTML",
+    "Printed File Name": "psv_generation_multi_output.html"
+  },
+  "Pss Grouping Config": {
+    "Method": "All Dimension",
+    "Ooi In Each Group": [
+      {
+        "Dimension": "location",
+        "Number": 3
+      },
+      {
+        "Dimension": "product",
+        "Number": 3
+      }
+    ],
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "psv_grouping_output_multi.html",
+    "Print Ooi Values Per Group": "Yes"
+  },
+  "User Generation Config": {
+    "Number Of Users": 100,
+    "Method": "Random",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "user_generation_single_output.html"
+  },
+  "User Grouping Config": {
+    "Method": "Equal Distribution"
+  },
+  "Observed Report Generation Config": {
+    "Method": "Random",
+    "Number Of Reports": 100,
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "report_generation_single_output.html"
+  },
+  "Anonymity Generation Config": {
+    "Method": "Fixed",
+    "Anonymity": [
+      {
+        "Dimension": "location",
+        "Anonymity": 2
+      },
+      {
+        "Dimension": "product",
+        "Anonymity": 2
+      }
+    ]
+  },
+  "Anonymization Config": {
+    "Method": "IDGAS"
+  },
+  "Cycle Runner Config": {
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "cycle_run_multi_output.html"
+  }
+}

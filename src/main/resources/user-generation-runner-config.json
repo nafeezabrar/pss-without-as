@@ -1,0 +1,11 @@
+{
+  "Seed": 293,
+  "User Generation Config": {
+    "Number Of Users": 100,
+    "Method": "Random",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "user_generation_single_output.html",
+    "Seed": 34
+  }
+}

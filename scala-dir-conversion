@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo starting
+find -maxdepth 1 -type d
+
+for dir in $(find `pwd` . -name "java" -type d)
+	do
+		echo $dir
+		sourcedir=$dir
+		scaladir="$(dirname "$dir")"/scala
+		echo $scaladir
+		mv -v ${dir}/ ${scaladir}
+	done

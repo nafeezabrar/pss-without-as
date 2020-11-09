@@ -1,0 +1,53 @@
+{
+  "Pss Type": {
+    "Dimension Type": "SINGLE",
+    "Dimension": {
+      "Id": 1,
+      "Name": "location",
+      "N": 6
+    }
+  },
+  "Psv Generation Config": {
+    "Method": "Random"
+  },
+  "Pss Grouping Config": {
+    "Method": "One Dimension",
+    "Ooi In Each Group": {
+      "Dimension": "location",
+      "Number": 3
+    },
+    "Print Ooi Values Per Group": "yes",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "psv_grouping_output_single.html"
+  },
+  "User Generation Config": {
+    "Number Of Users": 100,
+    "Method": "Random",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "user_generation_single_output.html"
+  },
+  "User Grouping Config": {
+    "Method": "Equal Distribution"
+  },
+  "Observed Report Generation Config": {
+    "Method": "Random",
+    "Number Of Reports": 100,
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "report_generation_single_output.html"
+  },
+  "Anonymity Generation Config": {
+    "Method": "Fixed",
+    "Anonymity": 2
+  },
+  "Anonymization Config": {
+    "Method": "IDGAS"
+  },
+  "Cycle Runner Config": {
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "cycle_run_single_output.html"
+  }
+}

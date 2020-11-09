@@ -1,0 +1,57 @@
+{
+  "Pss Type": {
+    "Dimension Type": "SINGLE",
+    "Dimension": {
+      "Id": 1,
+      "Name": "location",
+      "N": 8
+    }
+  },
+  "Psv Generation Config": {
+    "Method": "Point",
+    "Name": "location",
+    "Value Generation": "Sequential"
+  },
+  "Pss Grouping Config": {
+    "Method": "All Dimension Sequential",
+    "Ooi In Each Group": {
+      "Dimension": "location",
+      "Number": 8
+    }
+  },
+  "User Generation Config": {
+    "Number Of Users": 12,
+    "Method": "Random"
+  },
+  "User Grouping Config": {
+    "Method": "Equal Distribution Sequential"
+  },
+  "Observed Report Generation Config": {
+    "Method": "Random",
+    "Number Of Reports": 60,
+    "Source Type": "Json",
+    "File Name": "observed_reports_input.json"
+  },
+  "Anonymity Generation Config": {
+    "Method": "Fixed AAS",
+    "Anonymity": 3,
+    "Adding Anonymity": 2
+  },
+  "Anonymization Config": {
+    "Method": "AAS"
+  },
+  "Final Report Generation Config": {
+    "Method": "AAS Random"
+  },
+  "Deanonymization Config": {
+    "Method": "IDGAS"
+  },
+  "Cycle Runner Config": {
+  },
+  "Post Result Config": {
+    "Observed Report Count Map": "Yes",
+    "Observed Report Value Count Map": "Yes",
+    "Aps Decodability Result": "Yes",
+    "Report Count to Decode": "Yes"
+  }
+}

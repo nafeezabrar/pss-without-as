@@ -1,0 +1,28 @@
+group 'pss.simulator'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'application'
+
+mainClassName = "pss.Main"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.12.1'
+    compile project(':infrastructure-layer:library')
+    compile project(':data-access-layer-impl:data-reading-impl')
+    compile project(':factory-layer:runner-factory')
+    compile project(':factory-layer:seed-generation-factory')
+    compile project(':domain-layer:seed-generation')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '1.10.19'
+}
+
+test {
+    maxHeapSize = "2g"
+    jvmArgs "-XX:MaxPermSize=2g"
+}

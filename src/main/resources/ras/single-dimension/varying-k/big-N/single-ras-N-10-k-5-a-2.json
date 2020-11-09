@@ -1,0 +1,69 @@
+{
+  "Pss Type": {
+    "Dimension Type": "SINGLE",
+    "Dimension": {
+      "Id": 1,
+      "Name": "location",
+<<<<<<< HEAD
+      "N": 15
+=======
+      "N": 10
+>>>>>>> single adversary implementation
+    }
+  },
+  "Psv Generation Config": {
+    "Method": "Point",
+    "Name": "location",
+    "Value Generation": "Sequential"
+  },
+  "Pss Grouping Config": {
+    "Method": "All Dimension Sequential",
+    "Ooi In Each Group": {
+      "Dimension": "location",
+<<<<<<< HEAD
+      "Number": 15
+=======
+      "Number": 10
+>>>>>>> single adversary implementation
+    }
+  },
+  "User Generation Config": {
+    "Number Of Users": 12,
+    "Method": "Random"
+  },
+  "User Grouping Config": {
+    "Method": "Equal Distribution Sequential"
+  },
+  "Observed Report Generation Config": {
+    "Method": "Random",
+    "Number Of Reports": 60,
+    "Source Type": "Json",
+    "File Name": "observed_reports_input.json"
+  },
+  "Anonymity Generation Config": {
+    "Method": "Fixed RAS",
+<<<<<<< HEAD
+    "Anonymity": 4,
+=======
+    "Anonymity": 5,
+>>>>>>> single adversary implementation
+    "Replacing Anonymity": 2
+  },
+  "Anonymization Config": {
+    "Method": "RAS"
+  },
+  "Final Report Generation Config": {
+    "Method": "RAS Random"
+  },
+  "Deanonymization Config": {
+    "Method": "IDGAS"
+  },
+  "Cycle Runner Config": {
+  },
+  "Post Result Config": {
+    "Observed Report Count Map": "Yes",
+    "Observed Report Value Count Map": "Yes",
+    "Aps Decodability Result": "Yes",
+    "Report Count to Decode": "Yes"
+  }
+}

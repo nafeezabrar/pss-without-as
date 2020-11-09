@@ -1,0 +1,22 @@
+{
+  "Seed" : 1,
+  "Pss Type": {
+    "Dimension Type": "SINGLE",
+    "Location Dimension": "Yes",
+    "Location Dimension Id": "1",
+    "Dimension": {
+      "Id": 1,
+      "Name": "location",
+      "N": 4
+    }
+  },
+  "Psv Generation Config": {
+    "Method": "Alphabet",
+    "Save": "Yes",
+    "Print": "Yes",
+    "Save To": "Text File",
+    "Saved File Name": "psv_output.text",
+    "Print To": "HTML",
+    "Printed File Name": "psv_output.html"
+  }
+}

@@ -1,0 +1,26 @@
+group 'pss.simulator'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.12.1'
+    compile project(':domain-layer:data:adversary')
+    compile project(':domain-layer:adversary-runner')
+    compile project(':domain-layer:adversary-generation')
+    compile project(':domain-layer-impl:adversary-generation-impl')
+    compile project(':domain-layer-impl:deanonymization-impl')
+    compile project(':domain-layer-impl:adversary-runner-impl')
+    compile project(':domain-layer-impl:decodability-calculation-impl')
+    compile project(':factory-layer:deanonymizer-factory')
+    compile project(':data-saving-layer-impl')
+    compile project(':config-layer')
+    compile project(':presentation-layer-impl')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '1.10.19'
+}

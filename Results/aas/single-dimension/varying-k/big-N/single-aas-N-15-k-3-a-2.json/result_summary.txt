@@ -1,0 +1,12 @@
+Mean report count by each user is 4.60925
+Mean reported value count by each user is 4.060500636402206
+
+Mean Report count to full decode 55.311
+
+
+
+
+
+
+
+

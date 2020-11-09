@@ -1,0 +1,91 @@
+{
+  "Pss Type": {
+    "Dimension Type": "MULTI",
+    "Dimension": [
+      {
+        "Id": 1,
+        "Name": "location",
+        "N": 13
+      },
+      {
+        "Id": 2,
+        "Name": "product",
+        "N": 7
+      }
+    ]
+  },
+  "Psv Generation Config": {
+    "Dimension": [
+      {
+        "Method": "Point",
+        "Name": "location"
+      },
+      {
+        "Method": "Alphabet Capital",
+        "Name": "product"
+      }
+    ],
+    "Value Generation": "Sequential"
+  },
+  "Pss Grouping Config": {
+    "Method": "All Dimension Sequential",
+    "Ooi In Each Group": [
+      {
+        "Dimension": "location",
+        "Number": 13
+      },
+      {
+        "Dimension": "product",
+        "Number": 7
+      }
+    ]
+  },
+  "User Generation Config": {
+    "Number Of Users": 200,
+    "Method": "Random"
+  },
+  "User Grouping Config": {
+    "Method": "Equal Distribution Sequential"
+  },
+  "Observed Report Generation Config": {
+    "Method": "Random",
+    "Number Of Reports": 100
+  },
+  "Anonymity Generation Config": {
+    "Method": "Fixed",
+    "Anonymity": [
+      {
+        "Dimension": "location",
+        "Anonymity": 12
+      },
+      {
+        "Dimension": "product",
+        "Anonymity": 6
+      }
+    ]
+  },
+  "Anonymization Config": {
+    "Method": "IDGAS",
+    "File Name": "anonymization_input.json",
+    "Source Type": "Json"
+  },
+  "Final Report Generation Config": {
+    "Method": "Simple"
+  },
+  "Deanonymization Config": {
+    "Method": "IDGAS"
+  },
+  "Cycle Runner Config": {
+  },
+  "Post Result Config": {
+    "Observed Report Count Map": "Yes",
+    "Observed Report Value Count Map": "Yes",
+    "Aps Decodability Result": "Yes",
+    "Adversary Own Report Count Map": "Yes",
+    "Adversary Intercepted Report Count": "Yes",
+    "Adversary Reported Value Count": "Yes",
+    "Adversary Decoded Value Count": "Yes",
+    "Report Count to Decode": "Yes",
+    "Report Count Of Each Group": "Yes"
+  }
+}

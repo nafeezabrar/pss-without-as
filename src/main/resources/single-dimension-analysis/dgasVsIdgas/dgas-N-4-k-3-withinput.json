@@ -1,0 +1,81 @@
+{
+  "Pss Type": {
+    "Dimension Type": "SINGLE",
+    "Dimension": {
+      "Id": 1,
+      "Name": "location",
+      "N": 4
+    }
+  },
+  "Psv Generation Config": {
+    "Method": "Point",
+    "Name": "location",
+    "Value Generation": "Sequential",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "psv_variables.html"
+  },
+  "Pss Grouping Config": {
+    "Method": "All Dimension Sequential",
+    "Ooi In Each Group": {
+      "Dimension": "location",
+      "Number": 4
+    }
+  },
+  "User Generation Config": {
+    "Number Of Users": 45,
+    "Method": "Random",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "user_gerneration.html"
+  },
+  "User Grouping Config": {
+    "Method": "Equal Distribution Sequential"
+  },
+  "Observed Report Generation Config": {
+    "Method": "From File",
+    "Source Type": "Json",
+    "File Name": "single-dimension-analysis/dgasVsIdgas/observed_reports_input.json",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "observed_reports.html"
+  },
+  "Anonymity Generation Config": {
+    "Method": "Fixed",
+    "Anonymity": 3
+  },
+  "Anonymization Config": {
+    "Method": "DGAS",
+    "File Name": "anonymization_input.json",
+    "Source Type": "Json",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "anonymization.html"
+  },
+  "Final Report Generation Config": {
+    "Method": "Simple",
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "final_report_output.html"
+  },
+  "Deanonymization Config": {
+    "Method": "DGAS"
+  },
+  "Cycle Runner Config": {
+    "Print": "Yes",
+    "Print To": "HTML",
+    "Printed File Name": "final_report_output.html"
+  },
+  "Post Result Config": {
+    "Aps Decodability Result": "Yes",
+    "Adversary Reported Decodability": "Yes",
+    "Observed Report Count Map": "Yes",
+    "Observed Report Value Count Map": "Yes",
+    "Adversary Own Report Count Map": "Yes",
+    "Adversary Intercepted Report Count": "Yes",
+    "Adversary Decoded Value Count": "Yes",
+    "Adversary Reported Value Count": "Yes",
+    "Report Count to Decode": "Yes",
+    "Report Count Of Each Group": "Yes"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Runner Type": "Result Filtering",
+  "Config Source Type": "Json",
+  "File Names": [
+    "result-filtering-runner.json"
+  ],
+  "Seed Generation": {
+    "Type": "Random",
+    "Total Seeds": 10,
+    "Seed": 0
+  }
+}

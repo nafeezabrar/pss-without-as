@@ -1,0 +1,64 @@
+{
+  "Reports": [
+    {
+      "Report Id": 1,
+      "User Id": 7,
+      "Value": 1
+    },
+    {
+      "Report Id": 2,
+      "User Id": 7,
+      "Value": 2
+    },
+    {
+      "Report Id": 3,
+      "User Id": 7,
+      "Value": 3
+    },
+    {
+      "Report Id": 4,
+      "User Id": 7,
+      "Value": 4
+    },
+    {
+      "Report Id": 5,
+      "User Id": 7,
+      "Value": 1
+    },
+    {
+      "Report Id": 6,
+      "User Id": 7,
+      "Value": 2
+    },
+    {
+      "Report Id": 7,
+      "User Id": 7,
+      "Value": 3
+    },
+    {
+      "Report Id": 8,
+      "User Id": 7,
+      "Value": 4
+    },
+    {
+      "Report Id": 9,
+      "User Id": 7,
+      "Value": 1
+    },
+    {
+      "Report Id": 10,
+      "User Id": 7,
+      "Value": 2
+    },
+    {
+      "Report Id": 11,
+      "User Id": 7,
+      "Value": 3
+    },
+    {
+      "Report Id": 12,
+      "User Id": 7,
+      "Value": 4
+    }
+  ]
+}

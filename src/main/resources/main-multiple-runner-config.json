@@ -1,0 +1,15 @@
+{
+  "Runner Type": "Full Simulation Till Decoding",
+  "Config Source Type": "Json",
+  "File Names": [
+    "aas/single-dimension/varying-k/big-N/single-aas-N-15-k-10-a-2.json",
+    "aas/single-dimension/varying-k/big-N/single-aas-N-15-k-10-a-4.json",
+    "aas/single-dimension/varying-k/big-N/single-aas-N-15-k-10-a-6.json",
+    "aas/single-dimension/varying-k/big-N/single-aas-N-15-k-10-a-8.json"
+  ],
+  "Seed Generation": {
+    "Type": "Random",
+    "Total Seeds": 1000,
+    "Seed": 0
+  }
+}

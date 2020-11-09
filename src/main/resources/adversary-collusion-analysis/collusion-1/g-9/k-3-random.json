@@ -1,0 +1,105 @@
+{
+  "Pss Type": {
+    "Dimension Type": "MULTI",
+    "Dimension": [
+      {
+        "Id": 1,
+        "Name": "location",
+        "N": 18
+      },
+      {
+        "Id": 2,
+        "Name": "product",
+        "N": 12
+      }
+    ]
+  },
+  "Psv Generation Config": {
+    "Dimension": [
+      {
+        "Method": "Point",
+        "Name": "location"
+      },
+      {
+        "Method": "Alphabet Capital",
+        "Name": "product"
+      }
+    ],
+    "Value Generation": "Sequential"
+  },
+  "Pss Grouping Config": {
+    "Method": "All Dimension Sequential",
+    "Ooi In Each Group": [
+      {
+        "Dimension": "location",
+        "Number": 6
+      },
+      {
+        "Dimension": "product",
+        "Number": 4
+      }
+    ]
+  },
+  "User Generation Config": {
+    "Number Of Users": 540,
+    "Method": "Random"
+  },
+  "User Grouping Config": {
+    "Method": "Equal Distribution Sequential"
+  },
+  "Observed Report Generation Config": {
+    "Method": "Random",
+    "Number Of Reports": 2500,
+    "Source Type": "Json",
+    "File Name": "observed_reports_input.json"
+  },
+  "Anonymity Generation Config": {
+    "Method": "Fixed",
+    "Anonymity": [
+      {
+        "Dimension": "location",
+        "Anonymity": 3
+      },
+      {
+        "Dimension": "product",
+        "Anonymity": 3
+      }
+    ]
+  },
+  "Anonymization Config": {
+    "Method": "IDGAS",
+    "File Name": "anonymization_input.json",
+    "Source Type": "Json"
+  },
+  "Final Report Generation Config": {
+    "Method": "Simple"
+  },
+  "Deanonymization Config": {
+    "Method": "IDGAS"
+  },
+  "Cycle Runner Config": {
+  },
+  "Adversary Config": {
+    "Adversary Type": "Aps Adversary",
+    "Report Filter By": "Random Percentage",
+    "Percentage Of Reports": 2,
+    "Target User Id": 1,
+    "Percentage": 2,
+    "Strength": "Random Users",
+    "Adversary User Count": 1,
+    "Method": "IDGAS",
+    "Decodability Calculation Config": {
+      "End Point": {
+        "Type": [
+          "Location"
+        ],
+        "Print": "Yes",
+        "Print To": "Text File",
+        "Print Source": "Separate",
+        "Append": "Yes"
+      }
+    }
+  },
+  "Post Result Config": {
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "nafeez": "Nafeez Abrar",
+  "stringArrayKey": [
+    "a",
+    "b",
+    "c"
+  ],
+  "stringType": 1,
+  "intType": 1,
+  "nestedObject": {
+    "levelOne": {
+      "levelTwo": "child"
+    }
+  }
+}

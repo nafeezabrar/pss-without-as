@@ -1,0 +1,10 @@
+{
+  "Runner Type": "Full Simulation With Generated Adversary",
+  "Config Source Type": "Json",
+  "File Name": "adversary-multiple-runner-config-multi.json",
+  "Seed Generation": {
+    "Type": "Random",
+    "Total Seeds": 1000,
+    "Seed": 0
+  }
+}
